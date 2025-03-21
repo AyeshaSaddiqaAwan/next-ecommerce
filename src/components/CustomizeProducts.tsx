@@ -93,11 +93,11 @@ const CustomizeProducts = ({
                     backgroundColor: selected
                       ? "#f35c7a"
                       : disabled
-                      ? "#FBCFE8"
-                      : "white",
+                        ? "#FBCFE8"
+                        : "white",
                     color: selected || disabled ? "white" : "#f35c7a",
                     boxShadow: disabled ? "none" : "",
-                    
+
                   }}
                   key={choice.description}
                   onClick={clickHandler}
