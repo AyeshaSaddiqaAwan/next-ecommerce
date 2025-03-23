@@ -8,7 +8,7 @@ import { WixClientContextProvider } from "@/context/wixContext";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Lama Dev E-Commerce Application",
+  title: "Dev E-Commerce Application",
   description: "A complete e-commerce application with Next.js and Wix",
 };
 
