@@ -13,31 +13,32 @@ const Navbar = () => {
       {/* MOBILE */}
       <div className="h-full flex items-center justify-between md:hidden">
         <Link href="/">
-          <div className="text-2xl tracking-wide">LAMA</div>
+          <div className="text-2xl tracking-wide">Brand</div>
         </Link>
         <Menu />
       </div>
       {/* BIGGER SCREENS */}
-      <div className="hidden md:flex items-center justify-between gap-8 h-full">
-        {/* LEFT */}
-        <div className="w-1/3 xl:w-1/2 flex items-center gap-12">
+      <div className="hidden md:flex items-center justify-center gap-8 h-full">
+        <section className="w-full flex items-center justify-between">
           <Link href="/" className="flex items-center gap-3">
-            <Image src="/logo.png" alt="" width={24} height={24} />
-            <div className="text-2xl tracking-wide">LAMA</div>
+            <Image src="/logo.png" alt="Logo" width={150} height={150} />
+            <div className="text-2xl tracking-wide"></div>
           </Link>
-          <div className="hidden xl:flex gap-4">
-            <Link href="/">Homepage</Link>
-            <Link href="/">Shop</Link>
-            <Link href="/">Deals</Link>
-            <Link href="/">About</Link>
-            <Link href="/">Contact</Link>
+          {/* Centered Search Bar */}
+          <div className="flex-1 flex justify-center">
+            <SearchBar />
           </div>
-        </div>
-        {/* RIGHT */}
-        <div className="w-2/3 xl:w-1/2 flex items-center justify-between gap-8">
-          <SearchBar />
           <NavIcons />
-        </div>
+        </section>
+      </div>
+
+      {/* NAVIGATION LINKS ON NEXT LINE */}
+      <div className="hidden xl:flex flex-col items-start gap-2 mt-2">
+        <Link href="/">Homepage</Link>
+        <Link href="/">Shop</Link>
+        <Link href="/">Deals</Link>
+        <Link href="/">About</Link>
+        <Link href="/">Contact</Link>
       </div>
     </div>
   );
